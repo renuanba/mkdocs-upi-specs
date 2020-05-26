@@ -1,0 +1,19 @@
+site_name: UPI Specifications
+
+theme:
+  name: material
+  palette:
+    primary: light blue
+    accent: light blue
+  logo: small_logo.png
+  favicon: small_logo.png
+
+markdown_extensions:
+  - codehilite
+  - admonition
+
+nav:
+  - Home: 'index.md'
+  - Meta APIs:
+      - List Accounts: 'listacc.md'
+  - Release Notes: 'releasenotes.md'
