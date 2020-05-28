@@ -204,49 +204,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        List Accounts
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
     <a href="./" title="List Accounts" class="md-nav__link md-nav__link--active">
       List Accounts
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reqlistaccount" class="md-nav__link">
-    ReqListAccount
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resplistaccount" class="md-nav__link">
-    RespListAccount
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -285,30 +245,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#reqlistaccount" class="md-nav__link">
-    ReqListAccount
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resplistaccount" class="md-nav__link">
-    RespListAccount
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -331,8 +267,8 @@ As part of ATM PIN introduction, the issuer bank has to respond with new cred bl
 subtype as ATM PIN, its type and length, where PIN length can be 4 or 6 digits. This info
 will be used to capture ATM PIN in the common library.</p>
 <p><br /></p>
-<h2 id="reqlistaccount"><strong>ReqListAccount</strong></h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">&lt;upi:ReqListAccount</span> <span class="na">xmlns:upi=</span><span class="s">&quot;http://npci.org/upi/schema/&quot;</span><span class="nt">&gt;</span>                                                            
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">ReqListAccount</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;upi:ReqListAccount</span> <span class="na">xmlns:upi=</span><span class="s">&quot;http://npci.org/upi/schema/&quot;</span><span class="nt">&gt;</span>                                                            
     <span class="nt">&lt;Head</span> <span class="na">ver=</span><span class="s">&quot;1.0|2.0&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span> <span class="na">orgId=</span><span class="s">&quot;&quot;</span> <span class="na">msgId=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;Txn</span> <span class="na">id=</span><span class="s">&quot;&quot;</span> <span class="na">note=</span><span class="s">&quot;&quot;</span> <span class="na">refId=</span><span class="s">&quot;&quot;</span> <span class="na">refUrl=</span><span class="s">&quot;&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span> <span class="na">type=</span><span class="s">&quot;ListAccount&quot;</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;Link</span> <span class="na">type=</span><span class="s">&quot;MOBILE|AADHAAR&quot;</span> <span class="na">value=</span><span class="s">&quot;&quot;</span> <span class="nt">/&gt;</span>
@@ -357,21 +293,9 @@ will be used to capture ATM PIN in the common library.</p>
 <span class="nt">&lt;/upi:ReqListAccount&gt;</span>
 </code></pre></div>
 
-
-<details><summary style="font-size:14pt">Tag Description</summary>
-    <table>
-        <tr><th style="background-color:DodgerBlue">Tag Num</th><th style="background-color:DodgerBlue">Message Item</th><th style="background-color:DodgerBlue">XML Tag</th><th style="background-color:DodgerBlue">Occurrence</th></tr>
-        <tr><td>24.1</td><td>Linked account list</td><td>&lt;Link&gt;</td><td>1..1</td></tr>
-        <tr><td>24.1.2</td><td>Account linkage to Mobile/Aadhaar </td><td>type</td><td>1..1</td></tr>
-        <tr><td>24.1.3</td><td>Mobile or Aadhaar Number</td><td>value</td><td>1..1</td></tr>
-        <tr><td><mark>24.1.4</mark></td><td><mark>Aadhaar Consent</mark></td><td><mark>aadhaarConsent</mark></td><td><mark>1..1</mark></td></tr>
-        <tr><td><mark>24.1.5</mark></td><td><mark>TELECOM Operator</mark></td><td><mark>value</mark></td><td><mark>1..n</mark></td></tr>
-    </table>
-</details>
-
-<p><br /></p>
-<h2 id="resplistaccount"><strong>RespListAccount</strong></h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">&lt;upi:RespListAccount</span> <span class="na">xmlns:upi=</span><span class="s">&quot;http://npci.org/upi/schema/&quot;</span><span class="nt">&gt;</span>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">RespListAccount</label><div class="tabbed-content">
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;upi:RespListAccount</span> <span class="na">xmlns:upi=</span><span class="s">&quot;http://npci.org/upi/schema/&quot;</span><span class="nt">&gt;</span>
     <span class="nt">&lt;Head</span> <span class="na">ver=</span><span class="s">&quot;1.0|2.0&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span> <span class="na">orgId=</span><span class="s">&quot;&quot;</span> <span class="na">msgId=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;Txn</span> <span class="na">id=</span><span class="s">&quot;&quot;</span> <span class="na">note=</span><span class="s">&quot;&quot;</span> <span class="na">refId=</span><span class="s">&quot;&quot;</span> <span class="na">refUrl=</span><span class="s">&quot;&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span> <span class="na">type=</span><span class="s">&quot;ListAccount&quot;</span><span class="nt">/&gt;</span>
     <span class="nt">&lt;Resp</span> <span class="na">reqMsgId=</span><span class="s">&quot;&quot;</span> <span class="na">result=</span><span class="s">&quot;SUCCESS|FAILURE&quot;</span> <span class="na">errCode=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
@@ -392,6 +316,18 @@ will be used to capture ATM PIN in the common library.</p>
 <span class="nt">&lt;/upi:RespListAccount&gt;</span>
 </code></pre></div>
 
+</div>
+</div>
+<details><summary style="font-size:14pt">Tag Description</summary>
+    <table>
+        <tr><th style="background-color:DodgerBlue">Tag Num</th><th style="background-color:DodgerBlue">Message Item</th><th style="background-color:DodgerBlue">XML Tag</th><th style="background-color:DodgerBlue">Occurrence</th></tr>
+        <tr><td>24.1</td><td>Linked account list</td><td>&lt;Link&gt;</td><td>1..1</td></tr>
+        <tr><td>24.1.2</td><td>Account linkage to Mobile/Aadhaar </td><td>type</td><td>1..1</td></tr>
+        <tr><td>24.1.3</td><td>Mobile or Aadhaar Number</td><td>value</td><td>1..1</td></tr>
+        <tr><td><mark>24.1.4</mark></td><td><mark>Aadhaar Consent</mark></td><td><mark>aadhaarConsent</mark></td><td><mark>1..1</mark></td></tr>
+        <tr><td><mark>24.1.5</mark></td><td><mark>TELECOM Operator</mark></td><td><mark>value</mark></td><td><mark>1..n</mark></td></tr>
+    </table>
+</details>
 
 <details><summary style="font-size:14pt">Error and Response Codes</summary>
 <table cellpadding=".5px">

@@ -260,9 +260,8 @@
                 <h1 id="upi-api-specifications"><strong>UPI API Specifications</strong></h1>
 <p>All APIs are exposed as stateless service over HTTPS. PSP should ensure idempodent behaviour for all APIs. Usage of open data format in XML and widely used protocol such as HTTP allows easy adoption by the members.  </p>
 <p>API input data should be sent to the following URL as XML document using Content-Type “application/xml” or “text/xml”.  </p>
-<div class="codehilite"><pre><span></span><code>https://&lt;host&gt;/upi/&lt;api&gt;/&lt;ver&gt;/urn:txnid:&lt;txnId&gt;
+<div class="highlight"><pre><span></span><code>https://&lt;host&gt;/upi/&lt;api&gt;/&lt;ver&gt;/urn:txnid:&lt;txnId&gt;
 </code></pre></div>
-
 
 <blockquote>
 <ul>
@@ -275,9 +274,8 @@
 </blockquote>
 <p><br /></p>
 <p>All APIs have same ack response as given below: </p>
-<div class="codehilite"><pre><span></span><code><span class="nt">&lt;upi:Ack</span> <span class="na">xmlns:upi=</span><span class="s">&quot;&quot;</span> <span class="na">api=</span><span class="s">&quot;&quot;</span> <span class="na">reqMsgId=</span><span class="s">&quot;&quot;</span> <span class="na">errCode=</span><span class="s">&quot;&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;upi:Ack</span> <span class="na">xmlns:upi=</span><span class="s">&quot;&quot;</span> <span class="na">api=</span><span class="s">&quot;&quot;</span> <span class="na">reqMsgId=</span><span class="s">&quot;&quot;</span> <span class="na">errCode=</span><span class="s">&quot;&quot;</span> <span class="na">ts=</span><span class="s">&quot;&quot;</span><span class="nt">/&gt;</span>
 </code></pre></div>
-
 
 <blockquote>
 <ul>
