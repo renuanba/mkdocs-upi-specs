@@ -11,6 +11,8 @@ theme:
 markdown_extensions:
   - codehilite
   - admonition
+  - pymdownx.tabbed
+  - pymdownx.superfences
 
 nav:
   - Home: 'index.md'
